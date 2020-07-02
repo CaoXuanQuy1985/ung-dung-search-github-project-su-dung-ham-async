@@ -1,0 +1,15 @@
+<div class="field">
+  <label for="search">Link:</label>
+  <input name="search" id="search" #search>
+</div>
+<button type="button" id="searchBtn" (click)="searchRepository(search)"
+         class="ui positive right floated button">
+  Search Github
+</button>
+<div class="ui grid posts">
+  <ul>
+    <li *ngFor="let name of names">
+      Hello {{ name }}
+    </li>
+  </ul>
+</div>
